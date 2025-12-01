@@ -1,6 +1,6 @@
 {
   "name": "React Native Dev Container",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-25",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
       "version": "25"
