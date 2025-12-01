@@ -1,0 +1,44 @@
+{
+  "name": "React Native Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-25",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "25"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dsznajder.es7-react-js-snippets",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "msjsdiag.vscode-react-native",
+        "burkeholland.simple-react-snippets",
+        "formulahendry.auto-rename-tag",
+        "PKief.material-icon-theme",
+        "christian-kohler.npm-intellisense",
+        "wix.vscode-import-cost",
+        "steoates.autoimport",
+        "streetsidesoftware.code-spell-checker",
+        "eamodio.gitlens",
+        "mikestead.dotenv",
+        "dracula-theme.theme-dracula",
+        "oderwat.indent-rainbow",
+        "naumovs.color-highlight"
+      ],
+      "settings": {
+        "workbench.colorTheme": "Dracula",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": true
+        },
+        "editor.cursorBlinking": "smooth",
+        "editor.cursorSmoothCaretAnimation": "on",
+        "editor.smoothScrolling": true
+      }
+    }
+  },
+  "postCreateCommand": "npm install -g expo-cli @react-native-community/cli",
+  "forwardPorts": [8081, 19000, 19001, 19002]
+}
